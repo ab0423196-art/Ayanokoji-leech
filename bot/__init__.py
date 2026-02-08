@@ -508,9 +508,9 @@ BOT_THEME = environ.get('BOT_THEME', '')
 if len(BOT_THEME) == 0:
     BOT_THEME = 'minimal'
 
-IMAGES = environ.get('IMAGES', '')
-IMAGES = (IMAGES.replace("'", '').replace('"', '').replace(
-    '[', '').replace(']', '').replace(",", "")).split()
+IMAGES = environ.get('IMAGES', 'https://graph.org/file/b7f0220a972ba87ec7b4c-da3141c911aba581be.jpg')
+IMAGES = (IMAGES.replace("'", 'https://graph.org/file/26743b5aa4f414e530293-fbfa6a7e570e027dd3.jpg').replace('"', 'https://graph.org/file/803d218b9beaacd48f48e-1270ce153691bb22fa.jpg').replace(
+    '[', 'https://graph.org/file/36948a4c34e9c07211d27-ef15099f44268d1f20.jpg').replace(']', 'https://graph.org/file/7a285b2bada8a5a94ffff-32bc7024a233166fc0.jpg').replace(",", "")).split()
 if IMAGES:
     STATUS_LIMIT = 2
 
@@ -523,19 +523,19 @@ IMG_PAGE = int(IMG_PAGE) if IMG_PAGE.isdigit() else ''
 
 AUTHOR_NAME = environ.get('AUTHOR_NAME', '')
 if len(AUTHOR_NAME) == 0:
-    AUTHOR_NAME = 'KPS Bots'
+    AUTHOR_NAME = 'Eren Yeager'
 
 AUTHOR_URL = environ.get('AUTHOR_URL', '')
 if len(AUTHOR_URL) == 0:
-    AUTHOR_URL = 'https://telegram.me/KPSBots'
+    AUTHOR_URL = 'https://t.me/ABVerseBots'
 
 TITLE_NAME = environ.get('TITLE_NAME', '')
 if len(TITLE_NAME) == 0:
-    TITLE_NAME = 'KPSML-X Leech Bot'
+    TITLE_NAME = 'Leech bot'
     
 COVER_IMAGE = environ.get('COVER_IMAGE', '')
 if len(COVER_IMAGE) == 0:
-    COVER_IMAGE = 'https://graph.org/file/0ff9d5e94a070fe4154c0.jpg'
+    COVER_IMAGE = 'https://graph.org/file/4d965e2b58ea826fa85ef-ecc099a50ea92fb05a.jpg'
 
 GD_INFO = environ.get('GD_INFO', '')
 if len(GD_INFO) == 0:
